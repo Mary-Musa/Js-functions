@@ -1,3 +1,6 @@
+
+//in class activity
+
 You are going to create a constructor function called Product.
 
 Inside the constructor,use this to assign values to the object.
@@ -28,7 +31,7 @@ console.log(product1.price * product1.quantity)
 
 
 
-3/3/2026 assignments
+(3/3/2026 assignments)
 
 Task 1:
 Create a function that:
@@ -49,6 +52,8 @@ const b = [3, 4];
 combineArrays(a, b);
 // [1, 2, 3, 4]
 
+
+
 Task 2:
 
 Write a function called createGreeting that takes two parameters:
@@ -65,6 +70,7 @@ If no arguments are passed, return:
 If only name is passed, use the default greeting.
 
 If both arguments are passed, use both custom values.
+
 
 
 Task 3:
