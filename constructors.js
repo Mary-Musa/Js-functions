@@ -2,9 +2,9 @@
 //constructor is a special function used to create objects
 
 
-function Person(name,age,role){
+function Person(name,age,role){ //Person is the blueprint
 
-    this.name = name;
+    this.name = name;//this means the new object is being created.
     this.age = age;
     this.role = role;
 }
