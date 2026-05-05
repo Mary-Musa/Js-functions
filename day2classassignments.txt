@@ -1,0 +1,27 @@
+You are going to create a constructor function called Product.
+
+Inside the constructor,use this to assign values to the object.
+
+step 2:
+
+Create 3 different products using the new keyword
+
+example,
+
+const product1 = new Product("laptop",7500,"3);
+
+
+create two more products with different details
+
+step 3:
+
+Print all the products to the console.
+
+step4:
+
+simple calculation practice. After creating the objects,print: The total value of each product(price x quantity)
+
+
+example:
+
+console.log(product1.price * product1.quantity)
