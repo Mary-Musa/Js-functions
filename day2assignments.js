@@ -71,4 +71,40 @@ console.log(createGreeting("Nelson"));
 console.log(createGreeting("Maria","Hi"));
 console.log(createGreeting());
 
+//Task3-assignments
+
+
+/*
+Task 3:
+
+Write a function called calculateTotal that takes:
+
+price
+
+tax (default value should be 16% of the price)
+
+Requirements:
+
+Return the total price including tax.
+
+If tax is not provided, calculate it automatically as 16% of the price.
+
+If tax is provided manually, use the provided value instead of calculating it.
+
+*/
+
+
+function calculateTotal(price, tax) {
+  // If tax is not provided, calculate 16% of price
+  if (tax === undefined) {
+    tax = price * 0.16;
+  }
+
+  const total = price + tax;
+  return total;
+}
+
+console.log(calculateTotal(30000));        // 34800
+console.log(calculateTotal(30000, 5000));  // 35000
+
 
