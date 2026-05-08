@@ -60,7 +60,7 @@ If both arguments are passed, use both custom values.
 
 */
 
-function createGreeting(name="Guest",greeting="Hello"){
+function createGreeting(name ="Guest",greeting ="Hello"){
 
 
     return `${greeting} ${name}`;
