@@ -89,6 +89,7 @@ function collectColors(...colors){
 }
 
 console.log(collectColors());
+
 console.log(collectColors("red "," yellow ","  white "));
 
 
@@ -110,6 +111,8 @@ console.log(greetPeople());
 
 
 
+
+
 function greeting(...names){
 
     if(names.length === 0){
@@ -124,3 +127,27 @@ function greeting(...names){
 console.log(greeting("John","Hanna","Nada"));
 
 console.log(greeting());
+
+
+// Spread Operator-is used to expand arrays or Objects
+
+
+const colors = ["red","Pink"];
+const moreColors = ["Orange","Green","Yellow",...colors,"Violet"];
+
+console.log(moreColors);
+
+
+
+// another example ---for the spread operator
+
+function combineFoods(...otherfoods){
+
+    const grains = ["wheat","maize","Beans","mango"];
+
+    const allfoods = [...grains,...otherfoods];
+
+    return "I like to eat:" + allfoods.join(",");
+}
+
+console.log(combineFoods("Dessert","Meat"));
