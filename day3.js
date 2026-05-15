@@ -151,3 +151,34 @@ function combineFoods(...otherfoods){
 }
 
 console.log(combineFoods("Dessert","Meat"));
+
+
+
+//Another example with the hobbies
+
+function hobbies(...myhobbies){
+
+    const favHobbies = ["Listening to music","wacthing","scrolling"];
+
+    const allHobbies = [...favHobbies,...myhobbies];
+
+    return "I want to really get rid of some hobbies that don't built me:"+ allHobbies.join(",");
+}
+
+console.log(hobbies("Writing","Talking"));
+
+
+//another example of books you read
+
+function combineReads(...allreads){
+
+    const recentReads = ["Rich Dad &poor Dad","How to win Friends and Influence People","Atomic habits"];
+
+    const oldReads = [...recentReads,...allreads];
+
+    return "My Reads for this month are:"+ oldReads.join(",");
+
+
+}
+
+console.log(combineReads("How to avoid procrastination","Keeping Good Habits"));
