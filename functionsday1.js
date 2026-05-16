@@ -263,4 +263,3 @@ console.log(calculate(9,'*',9));
 console.log(calculate(2,'/',0));
 console.log(calculate(5,'x',7));
 
-
