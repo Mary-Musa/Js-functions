@@ -44,6 +44,8 @@ Returns a sentence:
 
 "Traveler’s favorite destinations are: Paris, Tokyo, New York, extra1, extra2..."
 
+
+
 //task2
 
 You have a predefined array of hobbies:
@@ -74,35 +76,24 @@ You have a predefined array of favorite foods:
 
 const mainFoods = ["Pizza", "Burger", "Pasta"];
 
-
 Create a function called favoriteFoods that:
-
-
 
 Accepts using rest parameters.
 
-
-
 Accepts an optional username parameter with default value "Foodie".
-
-
 
 Combines the predefined array and extra foods using spread operator.
 
-
-
 Returns a sentence:
 
-
-
 "Foodie’s favorite foods are: Pizza, Burger, Pasta, extra1, extra2..."
-
-
-
 
 favoriteFoods("Bob", "Sushi", "Ice Cream")
 // Output: "Bob’s favorite foods are: Pizza, Burger, Pasta, Sushi, Ice Cream"
 
 favoriteFoods()
 // Output: "Foodie’s favorite foods are: Pizza, Burger, Pasta"
+
+
+
 

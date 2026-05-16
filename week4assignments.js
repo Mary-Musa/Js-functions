@@ -13,7 +13,6 @@ console.log(squareNumber(9));
 
 
 
-
 //3/4/assignments -task1
 
 function myDestinations(username = "travelor",...mustVisit){
@@ -27,13 +26,11 @@ function myDestinations(username = "travelor",...mustVisit){
 
 }
 
-
 console.log(myDestinations("Mary","east Africa","west Africa"));
 console.log(myDestinations());
 
 
 //Task 2
-
 
 function listHobbies(username1 = "Person",...favhobbies){
 
@@ -53,4 +50,23 @@ console.log(listHobbies());
 
 
 //Task 3 assignments 
+
+function favFoods(username2="Foodie",...foods){
+
+    const mainFoods = ["pizza","Burger","pasta"];
+
+    const extraFoods = [...mainFoods,...foods];
+
+    return `${username2}'s favorite foods are: ${extraFoods.join(", ")}`;
+}
+
+console.log(favFoods("Bob","Rice","Ugali","Balila"));
+console.log(favFoods());
+
+
+
+
+
+
+
 
