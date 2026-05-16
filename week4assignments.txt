@@ -22,3 +22,87 @@ Call the function with at least two different numbers.
 
 
 Print the results.
+
+
+
+March /4/2026
+
+
+You have a predefined array of must-visit destinations:
+
+const mustVisit = ["Paris", "Tokyo", "New York"];
+
+
+Create a function called myDestinations that:
+
+Accepts using rest parameters.
+
+Accepts an optional username parameter with default value "Traveler".
+
+Combines the predefined array and extra destinations using spread operator.
+Returns a sentence:
+
+"Traveler’s favorite destinations are: Paris, Tokyo, New York, extra1, extra2..."
+
+//task2
+
+You have a predefined array of hobbies:
+
+const mainHobbies = ["reading", "coding", "drawing"];
+
+Create a function called listHobbies that:
+
+Accepts using rest parameters.
+Accepts an optional username parameter with default value "Person".
+
+Combines the predefined array and extra hobbies using spread operator.
+
+Returns a sentence:
+"Person’s hobbies are: reading, coding, drawing, extra1, extra2..."
+
+listHobbies("Alice", "cycling", "swimming")
+// Output: "Alice’s hobbies are: reading, coding, drawing, cycling, swimming"
+
+listHobbies()
+// Output: "Person’s hobbies are: reading, coding, drawing"
+
+
+
+Task 3
+
+You have a predefined array of favorite foods:
+
+const mainFoods = ["Pizza", "Burger", "Pasta"];
+
+
+Create a function called favoriteFoods that:
+
+
+
+Accepts using rest parameters.
+
+
+
+Accepts an optional username parameter with default value "Foodie".
+
+
+
+Combines the predefined array and extra foods using spread operator.
+
+
+
+Returns a sentence:
+
+
+
+"Foodie’s favorite foods are: Pizza, Burger, Pasta, extra1, extra2..."
+
+
+
+
+favoriteFoods("Bob", "Sushi", "Ice Cream")
+// Output: "Bob’s favorite foods are: Pizza, Burger, Pasta, Sushi, Ice Cream"
+
+favoriteFoods()
+// Output: "Foodie’s favorite foods are: Pizza, Burger, Pasta"
+
