@@ -63,6 +63,9 @@
 
         outer();
 
+
+        //another example to illustrate lexical scope
+
 function favFood(){
     let food = "Fries";
 
@@ -74,7 +77,7 @@ function favFood(){
 
 favFood();
 
-
+//Another example of closure
 
 function nums(){
 
@@ -94,5 +97,95 @@ counter();
 counter();
 counter();
 counter();
+
+//another example of closure and counter function
+function watchSales(){
+
+    let sales = 0;
+
+    return function salesIncrease(){
+
+        sales++;
+
+        console.log(`the watches sold are: ${sales}`);
+
+    }
+
+}
+
+    const watchesSold = watchSales();
+
+watchesSold();
+watchesSold();
+watchesSold();
+watchesSold();
+watchesSold();
+watchesSold();
+
+
+//another example,
+
+function bankAccount(){
+
+    let balance = 30000;
+
+    return {
+
+        deposit(amount){
+            balance += amount
+            console.log(balance)
+        }
+    }
+}
+
+const account = bankAccount()
+
+account.deposit(800);
+account.deposit(40000);// the total shows that the the func remembers its balance which is aspect of closures
+
+
+//how small banking systems work
+
+// function bankAccount() {
+
+//     let balance = 30000;
+
+//     return {
+
+//         deposit(amount) {
+//             balance += amount;
+//             console.log(`Deposited: ${amount}`);
+//         },
+
+//         withdraw(amount) {
+//             balance -= amount;
+//             console.log(`Withdrawn: ${amount}`);
+//         },
+
+//         checkBalance() {
+//             console.log(`Balance: ${balance}`);
+//         }
+//     };
+// }
+
+// const account = bankAccount();
+
+// account.deposit(500);
+// account.withdraw(200);
+// account.checkBalance();
+
+function kitchen(){
+
+    let fruits = "mango";
+
+    function fridge(){
+
+        console.log("Inside we only have", fruits);
+    }
+
+    fridge();
+}
+
+kitchen();
 
 
