@@ -1,0 +1,44 @@
+Assignment: JavaScript Scope & Closures Practice
+
+
+Mar 5
+
+Task 1: Greeting Generator (Closure)
+Create a function called .
+RequirementsThe function should accept one parameter called .Inside the function, return another function that accepts a parameter called .The returned function should print a message in this format:<greeting>, <name>!
+Example BehaviorHello, Amina!
+Hello, Brian!
+Hello, Fatima!
+Testing Requirement
+Test your function with .
+
+
+
+
+Task 2: Score Tracker (Closure)
+Create a function called .
+Requirements Inside 
+
+the function, create a variable called and initialize it to 0.Return a function that:
+Accepts a parameter called
+Adds the points to the score
+Prints the updated score.
+Example BehaviorScore: 10
+Score: 25
+Score: 40
+Testing Requirement
+Call your function .
+
+
+
+Task 3: School Information (Lexical Scope)
+Create the following structure:A called school with the value "Moringa School".A function called .Inside courseInfo, create a variable called course.Inside courseInfo, create another function called .The studentInfo function should print:
+The
+The
+Call the studentInfo function inside courseInfo.Finally, call courseInfo().Example OutputSchool: Moringa School
+Course: Software Engineering
+Testing Requirement
+Test the function .
+
+
+
