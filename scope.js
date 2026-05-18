@@ -174,18 +174,78 @@ account.deposit(40000);// the total shows that the the func remembers its balanc
 // account.withdraw(200);
 // account.checkBalance();
 
-function kitchen(){
+        function kitchen(){
 
-    let fruits = "mango";
+            let fruits = "mango";
 
-    function fridge(){
+            function fridge(){
 
-        console.log("Inside we only have", fruits);
+                console.log("Inside we only have", fruits);
+            }
+
+            fridge();
+        }
+
+        kitchen();
+
+
+
+
+    function School(){
+
+        let teacher = "Maha";
+
+        function classRoom(){
+
+            let student = "Judith";
+
+            console.log(student);
+            
+            console.log(teacher);
+        }
+
+        classRoom();
     }
 
-    fridge();
+    School();
+
+//that is how lexical scope does in javascript
+
+let country = "kenya";
+
+function continent(){
+
+    let region = "africa";
+
+    function city(){
+
+        console.log(country);
+        console.log(region);
+    }
+
+    city();
 }
 
-kitchen();
+continent();
+
+
+
+
+
+function greetMaker(greeting){
+
+    return function(name){
+
+        console.log(`${greeting}, ${name}!`);
+
+    };
+
+}
+
+const sayHello = greetMaker("Hello");
+
+sayHello("Ali");
+sayHello("Nada");
+
 
 
